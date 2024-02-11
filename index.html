@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="min-h-screen flex justify-center items-center bg-darkSlateGrey">
+    <main class="bg-white lg:rounded-3xl">
+        <div class="lg:flex items-center justify-between gap-10 container">
+            <img src="./img/illustration-sign-up-mobile.svg" alt="" class="w-full lg:hidden ">
+            <div class="px-6 pb-8 space-y-4 text-darkSlateGrey lg:mx-12 lg:space-y-8">
+                <h1 class=" mt-8 mb-4 text-4xl font-bold lg:text-6xl">Stay updated!</h1>
+                <p class="mb-4">Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul>
+                    <li class="flex items-start mb-2">
+                        <img src="./img/icon-list.svg" alt="" class="mr-4">
+                        <p>Product discovery and building what matters</p>
+                    </li>
+                    <li class="flex items-start mb-2">
+                        <img src="./img/icon-list.svg" alt="" class="mr-4">
+                        <p>Measuring to ensure updates are a success</p>
+                    </li>
+                    <li class="flex items-start">
+                        <img src="./img/icon-list.svg" alt="" class="mr-4">
+                        <p> And much more!</p>
+                    </li>
+                </ul>
+                <div class="grid grid-rows-2 grid-cols-2">
+                    <label for="email" class="mb-2 col-start-1 col-end-2 self-end text-sm font-bold">Email
+                        address</label>
+                    <p
+                        class="mb-2 col-start-2 col-end-3 self-end text-right text-sm text-tomato font-bold hidden error">
+                        Valid email required</p>
+                    <input type="text" id="email" placeholder="email@company.com"
+                        class="pl-4 py-3 col-start-1 col-end-3 border-2 rounded-md input">
+                </div>
+                <button
+                    class="w-full p-4 text-center bg-darkSlateGrey text-white font-bold rounded-md cursor-pointer transition-colors hover:bg-charcoalGrey subscribe-btn">Subscribe
+                    to monthly newsletter</button>
+            </div>
+            <img src="./img/illustration-sign-up-desktop.svg" alt="" class="hidden lg:block py-6 pr-6">
+        </div>
+        <div class="mx-6 lg:w-[375px] lg:mx-10 hidden thanks-card">
+            <img src="./img/icon-success.svg" alt="" class="mb-10 pt-36 lg:pt-10">
+            <div class="text-darkSlateGrey">
+                <h2 class="text-4xl lg:text-5xl mb-6 font-bold">Thanks for subscribing!</h2>
+                <p class="mb-28 lg:mb-12"> A confirmation email has been sent to <span
+                        class="font-bold">ash@loremcompany.com</span>.
+                    Please open it and click the button inside to confirm your subscription.</p>
+                <button
+                    class="w-full p-4 mb-12 text-center bg-darkSlateGrey text-white font-bold rounded-md cursor-pointer transition-colors hover:bg-charcoalGrey close-btn">Dismiss
+                    message</button>
+            </div>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
